@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://educompassglobal.com/sitemap.xml
+
+# Crawl-delay for bots that support it
+Crawl-delay: 1
+
+# Block access to admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+
+# Allow specific file types
+Allow: *.css$
+Allow: *.js$
+Allow: *.jpg$
+Allow: *.jpeg$
+Allow: *.png$
+Allow: *.gif$
+Allow: *.svg$
+Allow: *.webp$
+Allow: *.ico$
+Allow: *.woff$
+Allow: *.woff2$
+Allow: *.ttf$
+Allow: *.eot$
+
+# Block specific bots that are known to cause issues
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: Yandex
+Crawl-delay: 10
