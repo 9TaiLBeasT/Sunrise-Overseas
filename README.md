@@ -1,4 +1,4 @@
-# EduCompass Global - Study Abroad Consultancy Website
+# Sunrise Overseas - Study Abroad Consultancy Website
 
 A modern, responsive website for overseas education consultancy services, built with React, TypeScript, and modern web technologies.
 
