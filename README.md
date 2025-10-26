@@ -1,73 +1,126 @@
-# Welcome to your Lovable project
+# EduCompass Global - Study Abroad Consultancy Website
 
-## Project info
+A modern, responsive website for overseas education consultancy services, built with React, TypeScript, and modern web technologies.
 
-**URL**: https://lovable.dev/projects/7b3cd80a-4a93-435a-b8bb-a6e5ac0aadd8
+## 🌟 Features
 
-## How can I edit this code?
+- **Responsive Design**: Mobile-first approach with beautiful UI/UX
+- **SEO Optimized**: Comprehensive meta tags, structured data, and performance optimizations
+- **Performance Monitoring**: Core Web Vitals tracking and optimization
+- **Multi-Country Support**: Detailed information for 10+ study destinations
+- **Service Pages**: Comprehensive service offerings with detailed information
+- **Contact Integration**: Direct call and consultation booking features
 
-There are several ways of editing your application.
+## 🚀 Quick Start
 
-**Use Lovable**
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7b3cd80a-4a93-435a-b8bb-a6e5ac0aadd8) and start prompting.
+### Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Clone the repository
+git clone <repository-url>
+cd edu-compass-global-main
 
-**Use your preferred IDE**
+# Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080` (or next available port).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🏗️ Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn-ui components
+│   ├── HeroCarousel.tsx
+│   ├── LazyImage.tsx
+│   ├── PerformanceMonitor.tsx
+│   └── SEO.tsx
+├── pages/              # Main page components
+│   ├── Index.tsx       # Homepage
+│   ├── Country.tsx     # Country detail pages
+│   ├── Services.tsx    # Service pages
+│   └── NotFound.tsx    # 404 page
+├── assets/             # Images and static assets
+├── data/               # Static data and configurations
+└── hooks/              # Custom React hooks
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌍 Supported Countries
 
-## What technologies are used for this project?
+The website provides detailed information for studying in:
+- 🇺🇸 United States
+- 🇨🇦 Canada  
+- 🇬🇧 United Kingdom
+- 🇦🇺 Australia
+- 🇮🇪 Ireland
+- 🇩🇪 Germany
+- 🇳🇿 New Zealand
+- 🇱🇻 Latvia
+- 🇸🇮 Slovenia
+- 🇲🇹 Malta
 
-This project is built with:
+## 📊 SEO & Performance Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Meta Tags**: Comprehensive meta tags for all pages
+- **Structured Data**: JSON-LD schema for better search engine understanding
+- **Sitemap**: Auto-generated XML sitemap
+- **Performance Monitoring**: Core Web Vitals tracking (LCP, FID, CLS)
+- **Image Optimization**: Lazy loading and optimized image delivery
+- **Code Splitting**: Route-based code splitting for faster load times
 
-## How can I deploy this project?
+## 🛠️ Technologies Used
 
-Simply open [Lovable](https://lovable.dev/projects/7b3cd80a-4a93-435a-b8bb-a6e5ac0aadd8) and click on Share -> Publish.
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **UI Library**: shadcn-ui with Tailwind CSS
+- **Routing**: React Router DOM
+- **State Management**: React Query (TanStack Query)
+- **Icons**: Lucide React
+- **SEO**: React Helmet Async
 
-## Can I connect a custom domain to my Lovable project?
+## 📱 Responsive Design
 
-Yes, you can!
+The website is fully responsive and optimized for:
+- Desktop (1920px+)
+- Tablet (768px - 1024px)
+- Mobile (320px - 767px)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🔧 Development
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+### Performance Monitoring
+
+The application includes a `PerformanceMonitor` component that tracks:
+- Largest Contentful Paint (LCP)
+- First Input Delay (FID)
+- Cumulative Layout Shift (CLS)
+- Navigation timing metrics
+
+## 🚀 Deployment
+
+The website is ready for deployment to any static hosting service:
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
+
+## 📄 License
+
+This project is proprietary software. All rights reserved.
