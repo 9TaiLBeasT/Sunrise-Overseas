@@ -25,6 +25,7 @@ import newzealandImage from "@/assets/countries/newzealand.jpg";
 import latviaImage from "@/assets/countries/latvia.jpg";
 import sloveniaImage from "@/assets/countries/slovenia.jpg";
 import maltaImage from "@/assets/countries/malta.jpg";
+import planeImage from "@/assets/plane.png";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -86,7 +87,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="w-full bg-gradient-to-br from-blue-50 via-white to-indigo-50 text-foreground">
         <ScrollFlyIn
-          imageUrl="src\assets\plane.png"
+          imageUrl={planeImage}
           imageAlt="Top view of a private jet flying across the screen"
         >
           {/* This is the static text content */}
