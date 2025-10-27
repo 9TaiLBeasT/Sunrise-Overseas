@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { Suspense, lazy } from 'react';
 import { PerformanceMonitor } from '@/components/PerformanceMonitor';
+import { Analytics } from '@/components/VercelAnalytics';
 
 // Lazy load pages for better performance
 const Index = lazy(() => import("./pages/Index"));
@@ -27,6 +28,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <PerformanceMonitor />
+      <Analytics />
       <BrowserRouter>
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>

@@ -7,8 +7,7 @@ import {
   MapPin,
   Facebook,
   Instagram,
-  Twitter,
-  Globe,
+  Linkedin as LinkedIn,
 } from "lucide-react";
 import { FooterBackgroundGradient, TextHoverEffect } from "@/components/ui/hover-footer";
 
@@ -109,10 +108,9 @@ function EduCompassFooter() {
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={20} />, href: "#", label: "Facebook" },
-    { icon: <Instagram size={20} />, href: "#", label: "Instagram" },
-    { icon: <Twitter size={20} />, href: "#", label: "Twitter" },
-    { icon: <Globe size={20} />, href: "#", label: "Website" },
+    { icon: <Facebook size={20} />, href: "https://www.facebook.com/share/1Fcwu7pDQF/", label: "Facebook" },
+    { icon: <Instagram size={20} />, href: "https://www.instagram.com/_sunriseoverseas_?utm_source=qr&igsh=am4xeGdpMWh4Nzlp", label: "Instagram" },
+    { icon: <LinkedIn size={20} />, href: "https://www.linkedin.com/in/sandeep-g-832752296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "LinkedIn" },
   ];
 
   return (
